@@ -49,7 +49,7 @@ module Mjml
     nil
   end
 
-  BIN = Rails.root.join("node_modules/.bin/mjml").freeze
+  BIN = File.join(Dir.pwd, "node_modules/.bin/mjml").freeze
 
   class Handler
     def template_handler
