@@ -49,7 +49,7 @@ module Mjml
     nil
   end
 
-  BIN = discover_mjml_bin
+  BIN = Rails.root.join("node_modules/.bin/mjml").freeze
 
   class Handler
     def template_handler
